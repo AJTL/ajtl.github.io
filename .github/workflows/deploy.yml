@@ -1,0 +1,19 @@
+name: hugo deploy
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+jobs:
+  build:
+    runs-on: macOS-latest
+    steps:
+      - name: install Homebrew
+        run: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+      - name: install Hugo
+        run: brew install hugo
+      - name: checkout
+        uses: actions/checkout@v2
+        uses: ajtl/ajtl.github.io@main
+      - name: Hugo deploy
+        run: hugo

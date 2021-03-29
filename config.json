@@ -1,0 +1,142 @@
+{
+  "archetypeDir": "archetypes",
+  "assetDir": "assets",
+  "author": {
+    "homepage": "https://www.github.com/ajtl",
+    "name": "name"
+  },
+  "baseURL": "https://ajtl.github.io",
+  "buildDrafts": true,
+  "buildExpired": true,
+  "buildFuture": true,
+  "copyright": "&copy; 2016-2021. All rights reserved.",
+  "enableEmoji": true,
+  "enableGitInfo ": true,
+  "enableInlineShortcodes ": true,
+  "footnoteAnchorPrefix": "footnoteAnchorPrefix",
+  "footnoteReturnLinkContents": "footnoteReturnLinkContents",
+  "googleAnalytics ": "",
+  "index": {
+    "tag": "tags",
+    "topic": "topics"
+  },
+  "markup": {
+    "asciidocExt": {
+      "attributes": {},
+      "backend": "html5",
+      "extensions": [],
+      "failureLevel": "fatal",
+      "noHeaderOrFooter": true,
+      "preserveTOC": false,
+      "safeMode": "unsafe",
+      "sectionNumbers": false,
+      "trace": false,
+      "verbose": false,
+      "workingFolderCurrent": false
+    },
+    "blackFriday": {
+      "angledQuotes": false,
+      "extensions": null,
+      "extensionsMask": null,
+      "footnoteAnchorPrefix": "",
+      "footnoteReturnLinkContents": "",
+      "fractions": true,
+      "hrefTargetBlank": false,
+      "latexDashes": true,
+      "nofollowLinks": false,
+      "noreferrerLinks": false,
+      "plainIDAnchors": true,
+      "skipHTML": false,
+      "smartDashes": true,
+      "smartypants": true,
+      "smartypantsQuotesNBSP": false,
+      "taskLists": true
+    },
+    "defaultMarkdownHandler": "goldmark",
+    "goldmark": {
+      "extensions": {
+        "definitionList": true,
+        "footnote": true,
+        "linkify": true,
+        "strikethrough": true,
+        "table": true,
+        "taskList": true,
+        "typographer": true
+      },
+      "parser": {
+        "attribute": {
+          "block": false,
+          "title": true
+        },
+        "autoHeadingID": true,
+        "autoHeadingIDType": "github"
+      },
+      "renderer": {
+        "hardWraps": false,
+        "unsafe": false,
+        "xhtml": false
+      }
+    },
+    "highlight": {
+      "anchorLineNos": false,
+      "codeFences": true,
+      "guessSyntax": false,
+      "hl_Lines": "",
+      "lineAnchors": "",
+      "lineNoStart": 1,
+      "lineNos": false,
+      "lineNumbersInTable": true,
+      "noClasses": true,
+      "style": "monokai",
+      "tabWidth": 4
+    },
+    "tableOfContents": {
+      "endLevel": 3,
+      "ordered": false,
+      "startLevel": 2
+    }
+  },
+  "menu": {
+    "main": [
+      {
+        "identifier": "home",
+        "name": "Home",
+        "pre": "<i class='fa fa-home fa-fw'></i>",
+        "url": "/",
+        "weight": 1
+      },
+      {
+        "identifier": "post",
+        "name": "Posts",
+        "pre": "<i class='fa fa-list fa-fw'></i>",
+        "url": "/post/",
+        "weight": 2
+      },
+      {
+        "identifier": "about",
+        "name": "About",
+        "pre": "<i class='fa fa-user fa-fw'></i>",
+        "url": "/about/",
+        "weight": 3
+      },
+      {
+        "identifier": "contact",
+        "name": "Contact",
+        "pre": "<i class='fa fa-phone fa-fw'></i>",
+        "url": "/contact/",
+        "weight": 4
+      }
+    ]
+  },
+  "params": {
+    "brand": "brand",
+    "highlightjs": "androidstudio",
+    "subtitle": "subtitle"
+  },
+  "publishDir": "/docs",
+  "social": {
+    "github": "ajtl"
+  },
+  "title": "Title",
+  "theme": "blackburn"
+}
