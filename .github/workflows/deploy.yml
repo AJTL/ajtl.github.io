@@ -1,20 +1,25 @@
-name: hugo deploy
-on:
+# .github/workflows/deploy.yml
+name: Deploy
   push:
     branches: [main]
-  pull_request:
-    branches: [main]
-  env:
-    TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    #  HUGO_ARGS: '--minify'
+
 
 jobs:
-  build:
+  hugo_deploy:
+    name: Hugo
     runs-on: ubuntu-latest
+
     steps:
-      - name: 🛎 Check out master
-        uses: actions/checkout@main
+      - uses: actions/checkout@v2
         with:
-          fetch-depth: 1
-      - name: 🚀 Build and deploy
-        uses: victoriadrake/hugo-latest-cd@master
+          depth: 1
+          submodules: true
+          token: ${{ secrets.HUGO_DEPLOY }}
+
+      - uses: K-Phoen/hugo-gh-pages-action@master
+        with:
+          github_token: ${{ secrets.HUGO_DEPLOY }}
+          hugo_version: 0.82.0
+          build_folder: "docs"
+          build_branch: "main"
+
