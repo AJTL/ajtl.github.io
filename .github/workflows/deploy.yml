@@ -5,15 +5,14 @@ on:
   pull_request:
     branches: [main]
 jobs:
-  build:
-    runs-on: macOS-latest
-    steps:
-      - name: install Homebrew
-        run: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-      - name: install Hugo
-        run: brew install hugo
+  job1:
+    runs-on: ubuntu-latest
+    steps: 
       - name: checkout
-        uses: actions/checkout@v2
-        uses: ajtl/ajtl.github.io@main
-      - name: Hugo deploy
-        run: hugo
+        uses: actions/checkout@main
+        with:
+              submodule: true 
+      - name: Hugo-Site
+        uses: chabad360/hugo-actions@v2
+
+ 
