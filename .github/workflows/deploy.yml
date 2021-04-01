@@ -9,18 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: checkout
-        uses: actions/checkout@main
-        with:
-          submodules: true 
-          fetch-depth: 0
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: 'latest'
-      - name: Build
-        run: hugo --minify
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          super_secret: ${{ secrets.HUGO_DEPLOY }}
-          publish_dir: ./docs
+        uses: actions/checkout@v2
+      - name: Deploy the site
+        uses: benmatselby/hugo-deploy-gh-pages@master
+        env:
+          TARGET_REPO: ajtl/ajtl.github.io
+          TARGET_BRANCH: main
+          TOKEN: ${{ secrets.HUGO_DEPLOY }}
