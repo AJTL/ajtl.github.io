@@ -10,11 +10,10 @@ jobs:
     steps: 
       - name: checkout
         uses: actions/checkout@v2
-      - name: Deploy the site
-        uses: benmatselby/hugo-deploy-gh-pages@master
+      - name: hugo-deploy-gh-pages
+        uses: linuxsuren/surenpi@master
         env:
-          HOGO-VERSION: last
-          TARGET_REPO: ajtl/ajtl.github.io
-          TARGET_BRANCH: main
-          TOKEN: ${{ secrets.HUGO_DEPLOY }}
-          CNAME: ajtl.github.io
+          GIT_DEPLOY_KEY: ${{ secrets.HUGO_DEPLOY }}
+          HUGO_VERSION: "0.82.0"
+          WEBSITE_GIT: "git@github.com:ajtl/ajtl.github.io.git"
+          WEBSITE_DIR: "ajtl.github.io"
