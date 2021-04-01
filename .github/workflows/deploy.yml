@@ -8,21 +8,15 @@ on:
     branches: [main]
 
 jobs:
-  hugo_deploy:
-    name: Hugo
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-        with:
-          depth: 1
-          submodules: true
-          token: ${{ secrets.HUGO_DEPLOY }}
-
-      - uses: K-Phoen/hugo-gh-pages-action@master
-        with:
-          github_token: ${{ secrets.HUGO_DEPLOY }}
-          hugo_version: 0.82.0
-          build_folder: "docs"
-          build_branch: "main"
-
+    - name: 'Building...'
+      uses: reuixiy/hugo-deploy@v1
+      env:
+        DEPLOY_REPO: ajtl/ajtl.github.io
+        DEPLOY_BRANCH: main
+        DEPLOY_KEY: ${{ secrets.HUGO_DEPLOY }}
+        # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+        TZ: Asia/Shanghai
