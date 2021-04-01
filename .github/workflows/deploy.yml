@@ -9,10 +9,20 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: checkout
-        uses: actions/checkout@main
+        uses: actions/checkout@v2
         with:
-              submodule: true 
-      - name: Hugo-Site
-        uses: chabad360/hugo-actions@v2
+          submodule: true 
+          fetch-depth: 0
 
- 
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+      - name: Build
+        run: hugo --minify
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          super_secret: ${{ secrets.HUGO_DEPLOY }}
+          publish_dir: ./docs
