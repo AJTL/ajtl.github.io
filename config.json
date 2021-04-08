@@ -133,7 +133,7 @@
     "highlightjs": "androidstudio",
     "subtitle": "subtitle"
   },
-  "publishDir": "/docs",
+ // "publishDir": "/docs",
   "social": {
     "github": "ajtl"
   },
