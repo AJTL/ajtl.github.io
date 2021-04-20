@@ -129,13 +129,13 @@
         ]
     },
     "params": {
-        "brand": "brand",
+        "brand": "Boomerang",
         "highlightjs": "androidstudio",
-        "subtitle": "subtitle"
+        "subtitle": "AJTL"
     },
     "social": {
         "github": "ajtl"
     },
-    "title": "Title",
+    "title": "Boomerang",
     "theme": "blackburn"
 }
