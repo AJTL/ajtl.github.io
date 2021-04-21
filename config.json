@@ -3,20 +3,20 @@
     "assetDir": "assets",
     "author": {
         "homepage": "https://www.github.com/ajtl",
-        "name": "name"
+        "name": "AJTL"
     },
     "baseURL": "https://ajtl.github.io",
     "buildDrafts": true,
     "buildExpired": true,
     "buildFuture": true,
-    "copyright": "&copy; 2016-2021. All rights reserved.",
+    "copyright": "&copy; 2019-2021. All rights reserved.",
     "enableEmoji": true,
     "enableGitInfo ": true,
     "enableInlineShortcodes ": true,
     "footnoteAnchorPrefix": "footnoteAnchorPrefix",
     "footnoteReturnLinkContents": "footnoteReturnLinkContents",
     "googleAnalytics ": "",
-    "index": {
+    "indexes": {
         "tag": "tags",
         "topic": "topics"
     },
@@ -110,6 +110,20 @@
                 "name": "Posts",
                 "pre": "<i class='fa fa-list fa-fw'></i>",
                 "url": "/post/",
+                "weight": 2
+            },
+            {
+                "identifier": "topic",
+                "name": "Topics",
+                "pre": "<i class='fa fa-folder fa-fw'></i>",
+                "url": "/topics/",
+                "weight": 2
+            },
+            {
+                "identifier": "tag",
+                "name": "Tags",
+                "pre": "<i class='fa fa-tags fa-fw'></i>",
+                "url": "/tags/",
                 "weight": 2
             },
             {
