@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Homebrew on Boomerang</title><link>https://ajtl.github.io/topics/homebrew/</link><description>Recent content in Homebrew on Boomerang</description><generator>Hugo -- gohugo.io</generator><copyright>&amp;copy; 2019-2021. All rights reserved.</copyright><lastBuildDate>Tue, 25 Jun 2019 10:13:41 +0800</lastBuildDate><atom:link href="https://ajtl.github.io/topics/homebrew/index.xml" rel="self" type="application/rss+xml"/><item><title>解决brew cask软件更新</title><link>https://ajtl.github.io/post/hmoebrew_caskupgrade/</link><pubDate>Tue, 25 Jun 2019 10:13:41 +0800</pubDate><guid>https://ajtl.github.io/post/hmoebrew_caskupgrade/</guid><description>关于Homebrew/Homebrew Cask Homebrew是现如今在Mac平台下较为流行的包管理工具，用以简化 macOS 上的软件安装过程。
+项目主页：https://brew.sh GitHub地址：https://github.com/Homebrew
+Homebrew Cask是 Homebrew的扩展，借助它可以方便地在 macOS 上安装图形界面程序，即我们常用的各类应用。
+但是在实际使用过程中发现cask 更新命令很难达到更新的效果。
+brew cask upgrade 最后发现有这样一个方法buo/cask-upgrade
+brew cu buo/cask-upgrade这个项目是用来更新通过brew cask安装的每一个过时的APP。 它替代了原生的upgrade命令，提供了更为人性化的细节展示。
+GitHub地址：https://github.com/buo/homebrew-cask-upgrade
+使用brew cu 安装 brew tap buo/cask-upgrade 使用 更新所有过时APP:
+brew cu 更新指定的APP:
+brew cu [CASK] 带参更新指定的APP:
+brew cu [CASK] [options] 当运行brew cu命令又不带任何参数时，该命令会自动运行brew update获取软件的最新版本。
+brew cu 参数 输入
+brew help cu 可以获得命令行的文档帮助
+Usage: brew cu [CASK] [options] -a, --all Include apps that auto-update in the upgrade.</description></item></channel></rss>

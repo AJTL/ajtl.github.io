@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>c++ on Boomerang</title><link>https://ajtl.github.io/topics/c++/</link><description>Recent content in c++ on Boomerang</description><generator>Hugo -- gohugo.io</generator><copyright>&amp;copy; 2019-2021. All rights reserved.</copyright><lastBuildDate>Sat, 01 Jun 2019 16:54:49 +0800</lastBuildDate><atom:link href="https://ajtl.github.io/topics/c++/index.xml" rel="self" type="application/rss+xml"/><item><title>C++ delete this</title><link>https://ajtl.github.io/post/cpp_delete_this/</link><pubDate>Sat, 01 Jun 2019 16:54:49 +0800</pubDate><guid>https://ajtl.github.io/post/cpp_delete_this/</guid><description>C++中delete this的注意事项 你必须100%绝对确保this对象是通过new分配的（不是通过new[]，不是placement new，不是栈上的局部对象，不是全局对象，不是另一个对象的数据成员；仅仅只是通过原始的new运算符）
+你必须100%绝对确保调用delete this操作的成员函数是最后调用的成员函数
+你必须100%绝对确保在当前函数中delete this后，调用的其他成员函数不会读取this对象。
+你必须100%确保再也不会使用this指针。即使你使用this指针和其他指针比较，例如nullptr，打印this指针，转换this指针等等。
+delete this语句其实比较危险，在不同的编译器也会有不同的输出结果。最好私有化该类的构造函数，另外提供create函数。</description></item></channel></rss>

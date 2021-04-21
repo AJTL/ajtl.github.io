@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>3Sum on Boomerang</title><link>https://ajtl.github.io/tags/3sum/</link><description>Recent content in 3Sum on Boomerang</description><generator>Hugo -- gohugo.io</generator><copyright>&amp;copy; 2019-2021. All rights reserved.</copyright><lastBuildDate>Tue, 18 Jun 2019 10:37:56 +0800</lastBuildDate><atom:link href="https://ajtl.github.io/tags/3sum/index.xml" rel="self" type="application/rss+xml"/><item><title>ThreeSum/三数之和</title><link>https://ajtl.github.io/post/leetcode_three_sum/</link><pubDate>Tue, 18 Jun 2019 10:37:56 +0800</pubDate><guid>https://ajtl.github.io/post/leetcode_three_sum/</guid><description>题目 给定一个包含n 个整数的数组 nums，判断 nums 中是否存在三个元素a ，b ，c ，使得 a + b + c = 0 ？找出所有满足条件且不重复的三元组。
+注意：答案中不可以包含重复的三元组。
+示例:
+给定数组 nums = [-1, 0, 1, 2, -1, -4]，
+满足要求的三元组集合为： [ [-1, 0, 1], [-1, -1, 2] ]
+题目链接 CH: https://leetcode-cn.com/problems/3sum/ EN: https://leetcode.com/problems/3sum/ 解法一 vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt; threeSum(vector&amp;lt;int&amp;gt; &amp;amp;nums) { vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt; vResult; for (size_t i = 0; i &amp;lt; nums.size()-2; i++) { for (size_t j = i+1; j &amp;lt; nums.</description></item></channel></rss>

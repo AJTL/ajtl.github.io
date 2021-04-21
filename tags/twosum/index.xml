@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>TwoSum on Boomerang</title><link>https://ajtl.github.io/tags/twosum/</link><description>Recent content in TwoSum on Boomerang</description><generator>Hugo -- gohugo.io</generator><copyright>&amp;copy; 2019-2021. All rights reserved.</copyright><lastBuildDate>Mon, 17 Jun 2019 11:08:34 +0800</lastBuildDate><atom:link href="https://ajtl.github.io/tags/twosum/index.xml" rel="self" type="application/rss+xml"/><item><title>TwoSum/两数之和</title><link>https://ajtl.github.io/post/leetcode_two_sum/</link><pubDate>Mon, 17 Jun 2019 11:08:34 +0800</pubDate><guid>https://ajtl.github.io/post/leetcode_two_sum/</guid><description>题目 给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标。
+你可以假设每种输入只会对应一个答案。但是，你不能重复利用这个数组中同样的元素。
+示例:
+给定 nums = [2, 7, 11, 15], target = 9
+因为 nums[0] + nums[1] = 2 + 7 = 9 所以返回 [0, 1]
+题目链接 CH: https://leetcode-cn.com/problems/two-sum/ EN: https://leetcode.com/problems/two-sum/ 解法一 双重循环，时间复杂度是O(n^2)
+vector&amp;lt;int&amp;gt; twoSum(vector&amp;lt;int&amp;gt; &amp;amp;nums, int target) { vector&amp;lt;int&amp;gt; vRes; for (size_t i = 0; i &amp;lt; nums.size() - 1; i++) { for (size_t j = i + 1; j &amp;lt; nums.</description></item></channel></rss>
